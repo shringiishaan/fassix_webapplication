@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Fassix">
+	<Resource 
+		name="hsolutionsDB" 
+		auth="Container"
+		type="javax.sql.DataSource" 
+		username="shringiishaan" 
+		password="shringiishaan"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://127.0.0.1:3306/homesolutions_db?useSSL=false"
+		maxActive="100" 
+		maxIdle="30"
+		maxWait="10000" />
+</Context>

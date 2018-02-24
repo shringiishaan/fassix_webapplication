@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>HomeSolutions</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- JSP FILES -->
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <jsp-file>/Home.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminLogin</servlet-name>
+    <jsp-file>/AdminLogin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+    <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminOrders</servlet-name>
+    <jsp-file>/AdminOrders.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminOrders</servlet-name>
+    <url-pattern>/AdminOrders</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminOrdersHistory</servlet-name>
+    <jsp-file>/AdminOrdersHistory.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminOrdersHistory</servlet-name>
+    <url-pattern>/AdminOrdersHistory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminServices</servlet-name>
+    <jsp-file>/AdminServices.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServices</servlet-name>
+    <url-pattern>/AdminServices</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminWorkers</servlet-name>
+    <jsp-file>/AdminWorkers.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminWorkers</servlet-name>
+    <url-pattern>/AdminWorkers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminPanel</servlet-name>
+    <jsp-file>/AdminPanel.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminPanel</servlet-name>
+    <url-pattern>/AdminPanel</url-pattern>
+  </servlet-mapping>
+  <!-- //JSP FILES -->
+  
+  <!-- CONTROLLERS -->
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OrderController</servlet-name>
+    <servlet-class>controller.OrderController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderController</servlet-name>
+    <url-pattern>/OrderController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>RemoveOrder</servlet-name>
+    <servlet-class>controller.RemoveOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveOrder</servlet-name>
+    <url-pattern>/RemoveOrder</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>RemoveOrderRecord</servlet-name>
+    <servlet-class>controller.RemoveOrderRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveOrderRecord</servlet-name>
+    <url-pattern>/RemoveOrderRecord</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>TaskController</servlet-name>
+    <servlet-class>controller.TaskController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TaskController</servlet-name>
+    <url-pattern>/TaskController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>RemoveWorker</servlet-name>
+    <servlet-class>controller.RemoveWorker</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveWorker</servlet-name>
+    <url-pattern>/RemoveWorker</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>WorkerController</servlet-name>
+    <servlet-class>controller.WorkerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WorkerController</servlet-name>
+    <url-pattern>/WorkerController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ServiceController</servlet-name>
+    <servlet-class>controller.ServiceController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServiceController</servlet-name>
+    <url-pattern>/ServiceController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>RemoveService</servlet-name>
+    <servlet-class>controller.RemoveService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveService</servlet-name>
+    <url-pattern>/RemoveService</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>RemoveTask</servlet-name>
+    <servlet-class>controller.RemoveTask</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveTask</servlet-name>
+    <url-pattern>/RemoveTask</url-pattern>
+  </servlet-mapping>
+  <!-- //CONTROLLERS -->
+  
+  <filter>
+    <filter-name>AdminFilter</filter-name>
+    <filter-class>controller.AdminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AdminFilter</filter-name>
+    <url-pattern>/AdminOrders</url-pattern>
+    <url-pattern>/RemoveOrder</url-pattern>
+  </filter-mapping>
+  
+</web-app>

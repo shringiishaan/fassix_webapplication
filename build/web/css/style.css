@@ -1,0 +1,99 @@
+
+.side-nav li > a {
+    padding: 0 15px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+@media only screen and (max-width : 992px) 
+{
+	.main, footer 
+  	{
+		padding-left: 0;
+  	}
+}
+
+@media only screen and (max-width : 400px) 
+{
+	.slider
+	{
+		height:200px;	
+	}
+	
+	.slides
+	{
+		height:240px;
+	}
+	
+	#bookingmodal
+	{
+		width:90%;
+	}
+	
+}
+
+#bookingmodal
+{
+	height:92%;
+	max-height:92%;
+}
+
+.fixedbutton
+{
+	left:auto;
+	right:0px;
+	top:auto;
+	bottom:0px;
+	position:fixed;
+	z-index:500;
+	height:35px;	
+}
+
+.fixedbutton > i
+{
+	float:right;
+}
+
+.mainserviceicon
+{
+	max-height:50px;
+	margin-left:0px;
+}
+
+.mainservicetitle 
+{
+	margin-top:10px;
+    font-size: 20px;
+}
+
+.font15-5
+{
+	font-size:15.5px;
+}
+
+.mainservicedescription
+{
+}
+
+.card-content
+{
+	 text-align:center;
+}
+
+#mainicon
+{
+	margin:15px 0px 10px 2em;
+}
+
+.modal
+{
+	height:100% !important;
+	max-height:100% !important;
+	width:100%;
+	z-index:1000;
+}
